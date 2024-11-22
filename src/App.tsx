@@ -1,8 +1,8 @@
-import { BrowserRouter as Router } from 'react-router-dom';
-import { ClerkProvider } from '@clerk/clerk-react';
-import { ThemeProvider } from './components/theme-provider';
-import { AppRoutes } from './routes';
-import { motion, AnimatePresence } from 'framer-motion';
+import { BrowserRouter as Router } from "react-router-dom";
+import { ClerkProvider } from "@clerk/clerk-react";
+import { ThemeProvider } from "./components/theme-provider";
+import { AppRoutes } from "./routes";
+import { motion, AnimatePresence } from "framer-motion";
 
 const clerkPubKey = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -16,7 +16,7 @@ function App() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
-              transition={{ duration: 0.3 }}
+              transition={{ duration: 0.4 }}
             >
               <AppRoutes />
             </motion.div>
